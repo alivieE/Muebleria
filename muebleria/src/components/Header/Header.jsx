@@ -1,28 +1,37 @@
 import { React, useState } from "react";
 import s from "./Header.module.css";
+import images from "../../assets/index.js";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
-    <header>
+    <header className={s.header}>
       <div className="container">
         <div className={s.logo}>
-          <img src="#" alt="logo" />
+          <img src={images.logo} alt="logo" />
         </div>
         <nav class="nav">
           <button
+            className={s.menuAndClose}
             onClick={() => {
               setIsOpenMenu(true);
             }}
           >
-            change
+            <img src={images.menu} />
           </button>
           {isOpenMenu && (
             <div class={s.burgerMenu}>
               <div className={s.logo}>
                 <img src="#" alt="logo" />
               </div>
-              <button className={s.close}>x</button>
+              <button
+                className={s.menuAndClose}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
+                <img src={images.close} />
+              </button>
               <ul class={s.menuItems}>
                 <li>
                   <a href="#">Наші меблі</a>

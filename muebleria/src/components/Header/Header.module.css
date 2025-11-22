@@ -1,3 +1,8 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .hamburger-menu {
   display: flex;
   align-items: center;
@@ -27,3 +32,9 @@
   list-style: none;
   padding: 0;
 }
+
+.menuAndClose{
+    background: transparent;
+    border: none;
+}
+
