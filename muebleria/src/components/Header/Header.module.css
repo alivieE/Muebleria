@@ -1,6 +1,6 @@
-.header{
-    display: flex;
-    justify-content: space-between;
+.header {
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .hamburger-menu {
@@ -33,8 +33,25 @@
   padding: 0;
 }
 
-.menuAndClose{
-    background: transparent;
-    border: none;
+.menuAndClose {
+  background: transparent;
+  border: none;
 }
 
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.burgerMenu {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  display: none;
+}
+.open {
+  right: 0;
+  display: block;
+}
