@@ -1,0 +1,29 @@
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-right: 10px;
+}
+
+.menuItems {
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+}
+
+.desktopMenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
