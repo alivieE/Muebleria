@@ -24,23 +24,23 @@ const Header = () => {
             <div className={s.desktopMenu}>
               <ul class={s.menuItems}>
                 <li>
-                  <a href="#">Наші меблі</a>
+                  <a href="#" className={s.links}>Наші меблі</a>
                 </li>
 
                 <li>
-                  <a href="#">Про нас</a>
+                  <a href="#" className={s.links}>Про нас</a>
                 </li>
 
                 <li>
-                  <a href="#">Часті запитання</a>
+                  <a href="#" className={s.links}>Часті запитання</a>
                 </li>
 
                 <li>
-                  <a href="#">Відгуки</a>
+                  <a href="#" className={s.links}>Відгуки</a>
                 </li>
               </ul>
               <button>
-                <a href="#">До покупок</a>
+                <a href="#" className={s.links}>До покупок</a>
               </button>
             </div>
           </nav>
@@ -50,36 +50,39 @@ const Header = () => {
         <div
           className={isOpenMenu ? `${s.burgerMenu} ${s.open}` : s.burgerMenu}
         >
-          <div className={s.logo}>
-            <img src="#" alt="logo" />
+          <div className={s.wrapBurger}>
+            <div className={s.logo}>
+              <img src={images.logo} alt="logo" />
+            </div>
+            <button
+              className={s.menuAndClose}
+              onClick={() => {
+                setIsOpenMenu(false);
+              }}
+            >
+              <img src={images.close} />
+            </button>
           </div>
-          <button
-            className={s.menuAndClose}
-            onClick={() => {
-              setIsOpenMenu(false);
-            }}
-          >
-            <img src={images.close} />
-          </button>
+
           <ul class={s.menuItems}>
             <li>
-              <a href="#">Наші меблі</a>
+              <a href="#" className={s.links}>Наші меблі</a>
             </li>
 
             <li>
-              <a href="#">Про нас</a>
+              <a href="#" className={s.links}>Про нас</a>
             </li>
 
             <li>
-              <a href="#">Часті запитання</a>
+              <a href="#" className={s.links}>Часті запитання</a>
             </li>
 
             <li>
-              <a href="#">Відгуки</a>
+              <a href="#" className={s.links}>Відгуки</a>
             </li>
           </ul>
-          <button>
-            <a href="#">До покупок</a>
+          <button className={s.btnShopping}>
+            <a href="#" className={s.links}>До покупок</a>
           </button>
         </div>
       )}

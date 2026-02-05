@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  /* overflow: hidden; */
+  padding: 0 24px;
 }
 
 .hamburger-menu {
@@ -14,7 +14,10 @@
   background-color: #333;
   margin-right: 10px;
 }
-
+.nav{
+  display: flex;
+  align-items: center;
+}
 .menuItems {
 }
 
@@ -41,11 +44,12 @@
 .wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .burgerMenu {
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   right: -100%;
@@ -54,4 +58,33 @@
 .open {
   right: 0;
   display: block;
+}
+
+.wrapBurger{
+  padding: 0 12px;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItems{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.links{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btnShopping{
+  background-color: rgb(107, 6, 9);
+  color: white;
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 0 12px;
+  border-radius: 25px;
 }
