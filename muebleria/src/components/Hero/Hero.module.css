@@ -1,3 +1,61 @@
 .hero {
   height: 600px;
+  background-image: url("../../assets/heroBG.svg");
+  background-position: center;
+  background-size: cover; /* Adjust as needed: 'contain', '100% 100%', etc. */
+  background-repeat: no-repeat;
+  color: white;
+  
 }
+
+.heroDescription{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+  padding: 136px 0;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+}
+
+.heroSubtitle{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.heroButton {
+  background-color: rgb(107, 6, 9);
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border-top: 2px solid #954d4f;
+  border-bottom: 2px solid #570608;
+}
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 8px;
+
+width: 335px;
+height: 46px;
+
+background: #6B0609;
+box-shadow: 0px 1px 2px rgba(8, 12, 9, 0.05), inset 0px 32px 24px rgba(255, 255, 255, 0.05), inset 0px 2px 1px rgba(255, 255, 255, 0.25), inset 0px 0px 0px 1px rgba(8, 12, 9, 0.15), inset 0px -2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

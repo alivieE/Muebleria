@@ -24,23 +24,33 @@ const Header = () => {
             <div className={s.desktopMenu}>
               <ul class={s.menuItems}>
                 <li>
-                  <a href="#" className={s.links}>Наші меблі</a>
+                  <a href="#" className={s.links}>
+                    Наші меблі
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>Про нас</a>
+                  <a href="#" className={s.links}>
+                    Про нас
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>Часті запитання</a>
+                  <a href="#" className={s.links}>
+                    Часті запитання
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>Відгуки</a>
+                  <a href="#" className={s.links}>
+                    Відгуки
+                  </a>
                 </li>
               </ul>
               <button>
-                <a href="#" className={s.links}>До покупок</a>
+                <a href="#" className={s.links}>
+                  До покупок
+                </a>
               </button>
             </div>
           </nav>
@@ -66,23 +76,33 @@ const Header = () => {
 
           <ul class={s.menuItems}>
             <li>
-              <a href="#" className={s.links}>Наші меблі</a>
+              <a href="#" className={s.links}>
+                Наші меблі
+              </a>
             </li>
 
             <li>
-              <a href="#" className={s.links}>Про нас</a>
+              <a href="#" className={s.links}>
+                Про нас
+              </a>
             </li>
 
             <li>
-              <a href="#" className={s.links}>Часті запитання</a>
+              <a href="#" className={s.links}>
+                Часті запитання
+              </a>
             </li>
 
             <li>
-              <a href="#" className={s.links}>Відгуки</a>
+              <a href="#" className={s.links}>
+                Відгуки
+              </a>
             </li>
           </ul>
           <button className={s.btnShopping}>
-            <a href="#" className={s.links}>До покупок</a>
+            <a href="#" className={s.links}>
+              До покупок
+            </a>
           </button>
         </div>
       )}
