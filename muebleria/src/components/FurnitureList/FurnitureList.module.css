@@ -1,5 +1,5 @@
-.description{
-    margin: 48px 0 40px 0;
+.description {
+  margin: 48px 0 40px 0;
 }
 
 .title {
@@ -34,6 +34,22 @@
   font-size: 18px;
 }
 .categoryImg {
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   height: auto;
+  transition: 0.3s;
+  border-radius: 8px;
+  filter: grayscale(40%);
+}
+
+.categoryBtn {
+  border: none;
+  display: block;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.activeImg {
+  outline: 8px solid #810004;
+  outline-offset: -8px;
 }

@@ -2,19 +2,19 @@ import logo from "./logo.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
 import heroBG from "./heroBG.svg";
-import sofas from "./sofas.svg";
-import wardrobes from "./wardrobes.svg";
-import beds from "./beds.svg";
-import tables from "./tables.svg";
-import chairs from "./chairs.svg";
-import kitchen from "./kitchen.svg";
-import kids from "./kids.svg";
-import office from "./office.svg";
-import hallway from "./hallway.svg";
-import bathroom from "./bathroom.svg";
-import garden from "./garden.svg";
-import decor from "./decor.svg";
-import ALLcat from "./ALLcat.svg";
+import sofas from "./sofas.png";
+import wardrobes from "./wardrobes.png";
+import beds from "./beds.png";
+import tables from "./tables.png";
+import chairs from "./chairs.png";
+import kitchen from "./kitchen.png";
+import kids from "./kids.png";
+import office from "./office.png";
+import hallway from "./hallway.png";
+import bathroom from "./bathroom.png";
+import garden from "./garden.png";
+import decor from "./decor.png";
+import ALLcat from "./ALLcat.png";
 
 const categoriesImg = {
   "all": ALLcat, // Всі товари
