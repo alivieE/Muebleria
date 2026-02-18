@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import images, { categoriesImg } from "../../assets/index.js";
-import s from "./FurnitureList.module.css";
-import Categories from "./Categories/Categories.jsx";
+import images, { categoriesImg } from "../../../assets/index.js";
+import s from "./Categories.module.css";
 
-const FurnitureList = () => {
+const Categories = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -15,8 +14,8 @@ const FurnitureList = () => {
   }, []);
 
   return (
-    <div className="container">
-      {/* <div className={s.description}>
+    <div>
+      <div className={s.description}>
         <p className={s.title}>Наші меблі</p>
         <p className={s.subtitle}>
           Знайдіть ідеальні рішення для вашого інтер'єру
@@ -38,10 +37,9 @@ const FurnitureList = () => {
             <p className={s.categoryName}>{category.name}</p>
           </li>
         ))}
-      </ul> */}
-      <Categories></Categories>
+      </ul>
     </div>
   );
 };
 
-export default FurnitureList;
+export default Categories;
