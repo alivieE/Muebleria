@@ -4,10 +4,10 @@ import s from "./FurnitureList.module.css";
 
 const FurnitureList = () => {
   const [categories, setCategories] = useState([]);
-  const [furniture, setFurniture] = useState([]);
+  const [furnitures, setFurnitures] = useState([]);
   const [activeCategory, setActiveCategory] = useState("all");
-    // console.log(categories._id);
-    
+  // console.log(categories._id);
+
   useEffect(() => {
     fetch("https://furniture-store-v2.b.goit.study/api/categories")
       .then((res) => res.json())
@@ -17,13 +17,19 @@ const FurnitureList = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&category=${activeCategory}`)
+    const url =
+      activeCategory === "all"
+        ? `https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10`
+        : `https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&category=${activeCategory}`;
+
+    fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        setFurniture(data);
+        setFurnitures(data.furnitures); // ось тут — беремо поле furnitures
       });
   }, [activeCategory]);
-// console.log(activeCategory);
+  console.log(furnitures);
+
   return (
     <div className="container">
       <div>
@@ -75,7 +81,9 @@ const FurnitureList = () => {
               >
                 <img
                   className={`${s.categoryImg} ${
-                    activeCategory === category._id ? s.activeImg : s.categoryImg
+                    activeCategory === category._id
+                      ? s.activeImg
+                      : s.categoryImg
                   }`}
                   src={categoriesImg[category._id]}
                   alt={category.name}
@@ -87,11 +95,39 @@ const FurnitureList = () => {
         </ul>
       </div>
       <div className={s.furnitureList}>
-        <ul>
-          {/* {furniture.map((furnitures) => (
-            <li key={furnitures._id}>{furnitures.name}</li>
-          ))} */}
+        <ul className={s.furnitureItems}>
+          {furnitures.map((furniture) => (
+            <li key={furniture._id} className={s.furnitureItem}>
+              <img
+                className={s.furnitureImg}
+                src={furniture.images[0]}
+                alt={furniture.name}
+              />
+              <div className={s.furnitureInfo}>
+                <p className={s.furnitureName}>{furniture.name}</p>
+                <div className={s.colorContainer}>
+                  {furniture.color.map((color, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        borderRadius: "50%",
+                        backgroundColor: color,
+                        border: "1px solid #ccc",
+                      }}
+                    />
+                  ))}
+                </div>
+                <p className={s.furnitureName}>{furniture.price} грн</p>
+                <button className={s.furnitureDetailsBtn}>Детальніше</button>
+              </div>
+            </li>
+          ))}
         </ul>
+        <button href="#" className={s.showMoreBtn}>
+          Показати ще
+        </button>
       </div>
     </div>
   );

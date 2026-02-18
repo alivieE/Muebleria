@@ -15,6 +15,7 @@
 .categoriesList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 16px;
 }
 
@@ -52,4 +53,62 @@
 .activeImg {
   outline: 8px solid #810004;
   outline-offset: -8px;
+}
+
+.furnitureList{
+  padding: 40px 0;
+}
+
+.furnitureItems{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.furnitureItem{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.furnitureInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.furnitureImg{
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.furnitureName{
+font-size: 18px;
+font-weight: 600;
+}
+
+.colorContainer{
+  display: flex;
+  gap: 8px;
+}
+
+.furnitureDetailsBtn{
+  border-radius: 24px;
+  background: #F2F3F2;
+  padding: 10px;
+  border-bottom: 2px solid #E6E8E6;
+}
+
+.showMoreBtn {
+  background-color: rgb(107, 6, 9);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border-top: 2px solid #954d4f;
+  border-bottom: 2px solid #570608;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
