@@ -22,7 +22,7 @@ const Header = () => {
             </button>
 
             <div className={s.desktopMenu}>
-              <ul class={s.menuItems}>
+              <ul className={s.menuItems}>
                 <li>
                   <a href="#" className={s.links}>
                     Наші меблі
@@ -74,32 +74,71 @@ const Header = () => {
             </button>
           </div>
 
-          <ul class={s.menuItems}>
+          <ul className={s.menuItems}>
             <li>
-              <a href="#" className={s.links}>
+              <a
+                href="#"
+                className={s.links}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
                 Наші меблі
               </a>
             </li>
 
             <li>
-              <a href="#" className={s.links}>
+              <a
+                href="#"
+                className={s.links}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
                 Про нас
               </a>
             </li>
-
             <li>
-              <a href="#" className={s.links}>
+              <a
+                href="#"
+                className={s.links}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
+                Популярне
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className={s.links}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
                 Часті запитання
               </a>
             </li>
 
             <li>
-              <a href="#" className={s.links}>
+              <a
+                href="#"
+                className={s.links}
+                onClick={() => {
+                  setIsOpenMenu(false);
+                }}
+              >
                 Відгуки
               </a>
             </li>
           </ul>
-          <button className={s.btnShopping}>
+          <button
+            className={s.btnShopping}
+            onClick={() => {
+              setIsOpenMenu(false);
+            }}
+          >
             <a href="#" className={s.links}>
               До покупок
             </a>

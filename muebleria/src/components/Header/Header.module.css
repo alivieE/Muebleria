@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .hamburger-menu {
   display: flex;
   align-items: center;
@@ -17,8 +21,8 @@
   display: flex;
   align-items: center;
 }
-.menuItems {
-}
+/* .menuItems {
+} */
 
 .menu-items li {
   margin-bottom: 10px;
@@ -46,17 +50,30 @@
   align-items: center;
 }
 .burgerMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 0;
-  right: -100%;
-  display: none;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+
+  /* Анімація */
+  animation: slideIn 0.4s ease forwards;
 }
-.open {
-  right: 0;
-  display: block;
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.burgerMenu.open {
+  transform: translateX(0);
 }
 
 .wrapBurger {
@@ -76,7 +93,7 @@
 
 .links {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btnShopping {

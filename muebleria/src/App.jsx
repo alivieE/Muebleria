@@ -2,12 +2,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero";
+import FurnitureList from "./components/FurnitureList/FurnitureList.jsx";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Hero />
+      <Hero></Hero>
+      <FurnitureList></FurnitureList>
     </div>
   );
 }
