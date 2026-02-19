@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import s from "./ModalOrder.module.css";
 import images from "../../../assets/index.js";
 
-const ModalOrder = ({ onClose, selectedColor, furniture }) => {
+const ModalOrder = ({ onClose, selectedColor, furniture, setModalOrder }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -74,7 +74,13 @@ const ModalOrder = ({ onClose, selectedColor, furniture }) => {
               ></textarea>
             </div>
           </form>
-          <button type="submit" className={s.orderBtn}>
+          <button
+            type="submit"
+            className={s.orderBtn}
+            onClick={() => {
+              setModalOrder(false)
+            }}
+          >
             Надіслати заявку
           </button>
           <button

@@ -113,6 +113,7 @@ const ModalFurniture = ({ id, setModalOpen }) => {
         <ModalOrder
           selectedColor={selectedColor}
           furniture={furniture}
+          setModalOrder={setModalOrder}
           onClose={() => setModalOrder(false)}
         />
       )}
