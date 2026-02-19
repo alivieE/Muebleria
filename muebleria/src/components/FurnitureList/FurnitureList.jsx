@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import images, { categoriesImg } from "../../assets/index.js";
 import s from "./FurnitureList.module.css";
+import ModalFurniture from "../FurnitureList/ModalFurniture/ModalFurniture.jsx";
 
 const FurnitureList = () => {
   const [categories, setCategories] = useState([]);
   const [furnitures, setFurnitures] = useState([]);
   const [activeCategory, setActiveCategory] = useState("all");
-  // console.log(categories._id);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [id, setId] = useState(false);
 
   useEffect(() => {
     fetch("https://furniture-store-v2.b.goit.study/api/categories")
@@ -120,7 +122,16 @@ const FurnitureList = () => {
                   ))}
                 </div>
                 <p className={s.furnitureName}>{furniture.price} грн</p>
-                <button className={s.furnitureDetailsBtn}>Детальніше</button>
+                <button
+                  className={s.furnitureDetailsBtn}
+                  onClick={() => {
+                    document.body.style.overflow = "hidden";
+                    setId(furniture._id);
+                    setModalOpen(!modalOpen);
+                  }}
+                >
+                  Детальніше
+                </button>
               </div>
             </li>
           ))}
@@ -129,6 +140,10 @@ const FurnitureList = () => {
           Показати ще
         </button>
       </div>
+      {modalOpen && (
+        
+        <ModalFurniture id={id} setModalOpen={setModalOpen}></ModalFurniture>
+      )}
     </div>
   );
 };
