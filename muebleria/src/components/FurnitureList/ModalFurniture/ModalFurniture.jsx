@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import s from "./ModalFurniture.module.css";
 import images from "../../../assets/index.js";
+import ModalOrder from "../ModalOrder/ModalOrder.jsx";
 import ReactStars from "react-stars";
 
 const ModalFurniture = ({ id, setModalOpen }) => {
   const [furniture, setFurniture] = useState();
   const [selectedColor, setSelectedColor] = useState(null);
+  const [modalOrder, setModalOrder] = useState(false);
 
   useEffect(() => {
     fetch(`https://furniture-store-v2.b.goit.study/api/furnitures/${id}`, {})
@@ -85,12 +87,12 @@ const ModalFurniture = ({ id, setModalOpen }) => {
                 </div>
                 <p className={s.description}>{furniture.description}</p>
                 <p className={s.sizes}>{furniture.sizes}</p>
-                <button 
-                onClick={() => {
-                  console.log("Замовлення на:", furniture.name, "Колір:", selectedColor);
-                  setModalOpen(false);
-                }}
-                className={s.orderBtn}>
+                <button
+                  onClick={() => {
+                    setModalOrder(!modalOrder);
+                  }}
+                  className={s.orderBtn}
+                >
                   Перейти до замовлення
                 </button>
               </div>
@@ -107,6 +109,13 @@ const ModalFurniture = ({ id, setModalOpen }) => {
           </div>
         )}
       </div>
+      {modalOrder && (
+        <ModalOrder
+          selectedColor={selectedColor}
+          furniture={furniture}
+          onClose={() => setModalOrder(false)}
+        />
+      )}
     </>
   );
 };

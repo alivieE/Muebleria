@@ -58,23 +58,6 @@ const FurnitureList = () => {
               <p className={s.categoryName}>Всі товари</p>
             </button>
           </li>
-          {/* {categories.map((category) => (
-            <li key={category._id} className={s.categoryItem}>
-              <button
-                onClick={() => setActiveCategory(category._id)}
-                className={s.categoryBtn}
-              >
-                <img
-                  className={`${s.categoryImg} ${
-                    activeCategory === category._id ? s.activeImg : s.categoryImg
-                  }`}
-                  src={categoriesImg[category._id]}
-                  alt={category.name}
-                />
-                <p className={s.categoryName}>{category.name}</p>
-              </button>
-            </li>
-          ))} */}
           {categories.map((category) => (
             <li key={category._id} className={s.categoryItem}>
               <button

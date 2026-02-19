@@ -1,0 +1,78 @@
+.overlay{
+    padding: 64px 16px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #303030ec;
+  overflow: scroll;
+}
+
+.section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+}
+
+.orderTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  padding: 48px 0 48px 0;
+}
+
+.inputBlock {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  width: 95%;
+  height: 43px;
+  border-radius: 8px;
+  border: 1px solid #E0E1E0;
+  padding: 8px 12px;
+  font-size: 16px;
+  resize: none;
+  background-color: #F2F3F2;
+  color: #9B9C9B;
+}
+
+.textarea {
+  width: 95%;
+  height: 130px;
+  border-radius: 8px;
+  border: 1px solid #E0E1E0;
+  padding: 8px;
+  font-size: 16px;
+  resize: none;
+  background-color: #F2F3F2;
+  color: #9B9C9B;
+}
+
+.orderBtn {
+  background-color: rgb(107, 6, 9);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border-top: 2px solid #954d4f;
+  border-bottom: 2px solid #570608;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
