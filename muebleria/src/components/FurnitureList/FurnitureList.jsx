@@ -9,14 +9,31 @@ const FurnitureList = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [modalOpen, setModalOpen] = useState(false);
   const [id, setId] = useState(false);
+  const [page, setPage] = useState(1);
+  const [more, setMore] = useState(true);
 
   useEffect(() => {
-    fetch("https://furniture-store-v2.b.goit.study/api/categories")
+    setFurnitures([]);
+    setPage(1);
+    setMore(true);
+  }, [activeCategory]);
+
+  useEffect(() => {
+    const url =
+      activeCategory === "all"
+        ? `https://furniture-store-v2.b.goit.study/api/furnitures?page=${page}&limit=10`
+        : `https://furniture-store-v2.b.goit.study/api/furnitures?page=${page}&limit=10&category=${activeCategory}`;
+
+    fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        setCategories(data);
+        const newItems = data.furnitures;
+        setFurnitures((prev) =>
+          page === 1 ? newItems : [...prev, ...newItems],
+        );
+        if (newItems.length < 10) setMore(false); // якщо прийшло менше 10 — більше нема
       });
-  }, []);
+  }, [activeCategory, page]);
 
   useEffect(() => {
     const url =
@@ -119,12 +136,16 @@ const FurnitureList = () => {
             </li>
           ))}
         </ul>
-        <button href="#" className={s.showMoreBtn}>
-          Показати ще
-        </button>
+        {more && (
+          <button
+            className={s.showMoreBtn}
+            onClick={() => setPage((prev) => prev + 1)}
+          >
+            Показати ще
+          </button>
+        )}
       </div>
       {modalOpen && (
-        
         <ModalFurniture id={id} setModalOpen={setModalOpen}></ModalFurniture>
       )}
     </div>
