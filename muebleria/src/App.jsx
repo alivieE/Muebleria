@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero";
 import FurnitureList from "./components/FurnitureList/FurnitureList.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
+import Questions from "./components/Questions/Questions.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero></Hero>
       <FurnitureList></FurnitureList>
       <AboutUs></AboutUs>
+      <Questions></Questions>
     </div>
   );
 }
