@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero";
 import FurnitureList from "./components/FurnitureList/FurnitureList.jsx";
+import AboutUs from "./components/AboutUs/AboutUs.jsx";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <FurnitureList></FurnitureList>
+      <AboutUs></AboutUs>
     </div>
   );
 }

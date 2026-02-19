@@ -15,6 +15,7 @@ import bathroom from "./bathroom.png";
 import garden from "./garden.png";
 import decor from "./decor.png";
 import ALLcat from "./ALLcat.png";
+import aboutUs from "./aboutUs.png";
 
 const categoriesImg = {
   "all": ALLcat, // Всі товари
@@ -32,5 +33,5 @@ const categoriesImg = {
   "66504a50a1b2c3d4e5f6a7c3": decor, // Декор та аксесуари
 };
 
-export default { logo, close, menu, heroBG, ALLcat };
+export default { logo, close, menu, heroBG, ALLcat, aboutUs };
 export { categoriesImg };
