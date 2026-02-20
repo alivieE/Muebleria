@@ -16,6 +16,8 @@ import garden from "./garden.png";
 import decor from "./decor.png";
 import ALLcat from "./ALLcat.png";
 import aboutUs from "./aboutUs.png";
+import questionOpened from "./questionOpened.svg";
+import questionClosed from "./questionClosed.svg";
 
 const categoriesImg = {
   "all": ALLcat, // Всі товари
@@ -33,5 +35,5 @@ const categoriesImg = {
   "66504a50a1b2c3d4e5f6a7c3": decor, // Декор та аксесуари
 };
 
-export default { logo, close, menu, heroBG, ALLcat, aboutUs };
+export default { logo, close, menu, heroBG, ALLcat, aboutUs, questionOpened, questionClosed };
 export { categoriesImg };

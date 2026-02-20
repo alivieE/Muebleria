@@ -19,6 +19,15 @@ const FurnitureList = () => {
   }, [activeCategory]);
 
   useEffect(() => {
+    fetch("https://furniture-store-v2.b.goit.study/api/categories")
+      .then((res) => res.json())
+      .then((data) => {
+        setCategories(data);
+      });
+  }, []);
+
+
+  useEffect(() => {
     const url =
       activeCategory === "all"
         ? `https://furniture-store-v2.b.goit.study/api/furnitures?page=${page}&limit=10`
@@ -146,6 +155,7 @@ const FurnitureList = () => {
         )}
       </div>
       {modalOpen && (
+
         <ModalFurniture id={id} setModalOpen={setModalOpen}></ModalFurniture>
       )}
     </div>
