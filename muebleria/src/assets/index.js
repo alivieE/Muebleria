@@ -18,6 +18,10 @@ import ALLcat from "./ALLcat.png";
 import aboutUs from "./aboutUs.png";
 import questionOpened from "./questionOpened.svg";
 import questionClosed from "./questionClosed.svg";
+import footerLogo from "./footerLogo.svg";
+import youtube from "./youtube.svg";
+import instagram from "./instagram.svg";
+import facebook from "./facebook.svg";
 
 const categoriesImg = {
   "all": ALLcat, // Всі товари
@@ -35,5 +39,5 @@ const categoriesImg = {
   "66504a50a1b2c3d4e5f6a7c3": decor, // Декор та аксесуари
 };
 
-export default { logo, close, menu, heroBG, ALLcat, aboutUs, questionOpened, questionClosed };
+export default { logo, close, menu, heroBG, ALLcat, aboutUs, questionOpened, questionClosed, footerLogo, youtube, instagram, facebook };
 export { categoriesImg };

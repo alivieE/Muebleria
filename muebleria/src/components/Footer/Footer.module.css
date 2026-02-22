@@ -1,0 +1,25 @@
+.section {
+  background-color: #6b0609;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 26px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.links {
+  font-weight: 400;
+  font-size: 16px;
+}

@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import FurnitureList from "./components/FurnitureList/FurnitureList.jsx";
 import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Questions from "./components/Questions/Questions.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <FurnitureList></FurnitureList>
       <AboutUs></AboutUs>
       <Questions></Questions>
+      <Footer></Footer>
     </div>
   );
 }
