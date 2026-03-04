@@ -4,7 +4,7 @@ import images from "../../assets/index.js";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div>
       <div className={s.section}>
         <div className={s.logo}>
           <img src={images.footerLogo} alt="logo" />
