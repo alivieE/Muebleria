@@ -1,3 +1,32 @@
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  align-items: center;
+  padding: 48px 0 32px 0;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 16px;
+}
+
+.colorContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .image {
   height: 231px;
   background-position: center;

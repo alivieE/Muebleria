@@ -11,7 +11,7 @@ const PopularItems = () => {
 
   useEffect(() => {
     fetch(
-      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular"
+      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular",
     )
       .then((res) => res.json())
       .then((data) => {
@@ -42,8 +42,24 @@ const PopularItems = () => {
                         alt={item.name}
                         className={s.image}
                       />
-                      <p>{item.name}</p>
-                      <p>{item.price.toFixed(2)} грн</p>
+                      <div className={s.info}>
+                        <p className={s.name}>{item.name}</p>
+                        <div className={s.colorContainer}>
+                          {item.color.map((color, index) => (
+                            <div
+                              key={index}
+                              style={{
+                                width: "20px",
+                                height: "20px",
+                                borderRadius: "50%",
+                                backgroundColor: color,
+                                border: "1px solid #ccc",
+                              }}
+                            />
+                          ))}
+                        </div>
+                        <p className={s.price}>{item.price.toFixed(2)} грн</p>
+                      </div>
                     </li>
                   </SwiperSlide>
                 ))}
