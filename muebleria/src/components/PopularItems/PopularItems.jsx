@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 import s from "./PopularItems.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 const PopularItems = () => {
   const [popularItems, setPopularItems] = useState([]);
 
   useEffect(() => {
     fetch(
-      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular",
+      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -24,7 +26,13 @@ const PopularItems = () => {
 
         <div>
           <ul className={s.popularItem}>
-            <Swiper spaceBetween={50} slidesPerView={3}>
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
+              modules={[Navigation, Pagination]}
+              navigation
+              pagination={{ clickable: true }}
+            >
               {popularItems.length > 0 &&
                 popularItems.map((item) => (
                   <SwiperSlide>

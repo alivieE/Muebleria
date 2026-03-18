@@ -1,13 +1,5 @@
-.popularItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  max-width: 100px;
+.image {
+  height: 231px;
+  background-position: center;
+  border-radius: 16px;
 }
-
-/* .image{
-    width: 80vw;
-    border-radius: 16px;
-} */

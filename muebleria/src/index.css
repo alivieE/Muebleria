@@ -90,11 +90,11 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 .body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: #060307;
 }
 /* HTML5 display-role reset for older browsers */
@@ -133,7 +133,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -167,7 +167,8 @@ input::-webkit-inner-spin-button {
   }
 }
 
-input,textarea {
+input,
+textarea {
   outline: none;
 }
 
@@ -184,9 +185,7 @@ input,textarea {
 .swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets {
   bottom: 10px;
 }
-.swiper-slide{
-  width: 280px;
-}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -203,4 +202,11 @@ input,textarea {
   .container {
     width: 1312px;
   }
+}
+
+.swiper-slide {
+  min-width: 280px;
+}
+.swiper-wrapper {
+  gap: 16px;
 }
