@@ -9,7 +9,7 @@ const PopularItems = () => {
 
   useEffect(() => {
     fetch(
-      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular"
+      "https://furniture-store-v2.b.goit.study/api/furnitures?page=1&limit=10&type=popular",
     )
       .then((res) => res.json())
       .then((data) => {
@@ -18,30 +18,32 @@ const PopularItems = () => {
   }, []);
   console.log(1);
   return (
-    <div className={s.section}>
-      <h2 className={s.title}>Популярні товари</h2>
+    <div className="container">
+      <div className={s.section}>
+        <h2 className={s.title}>Популярні товари</h2>
 
-      <div>
-        <ul className={s.popularItem}>
-          <Swiper spaceBetween={50} slidesPerView={3}>
-            {popularItems.length > 0 &&
-              popularItems.map((item) => (
-                <SwiperSlide>
-                  <li key={item.id}>
-                    <img
-                      src={item.images[0]}
-                      alt={item.name}
-                      className={s.image}
-                    />
-                    <p>{item.name}</p>
-                    <p>{item.price.toFixed(2)} грн</p>
-                  </li>
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </ul>
+        <div>
+          <ul className={s.popularItem}>
+            <Swiper spaceBetween={50} slidesPerView={3}>
+              {popularItems.length > 0 &&
+                popularItems.map((item) => (
+                  <SwiperSlide>
+                    <li key={item.id}>
+                      <img
+                        src={item.images[0]}
+                        alt={item.name}
+                        className={s.image}
+                      />
+                      <p>{item.name}</p>
+                      <p>{item.price.toFixed(2)} грн</p>
+                    </li>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </ul>
+        </div>
+        <div></div>
       </div>
-      <div></div>
     </div>
   );
 };
