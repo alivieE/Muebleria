@@ -21,6 +21,7 @@
 
 .categoryItem {
   position: relative;
+  width: calc(50% - 8px);
 }
 
 .categoryName {
@@ -35,7 +36,7 @@
   font-size: 18px;
 }
 .categoryImg {
-  max-width: 160px;
+  
   width: 100%;
   height: auto;
   transition: 0.3s;
