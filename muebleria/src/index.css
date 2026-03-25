@@ -210,3 +210,15 @@ textarea {
 .swiper-wrapper {
   gap: 16px;
 }
+
+.swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next{
+  right: 20px;
+  top: 322px;
+  left: auto;
+}
+
+.swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev{
+  right: 88px;
+  top: 322px;
+  left: auto;
+}
