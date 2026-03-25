@@ -255,19 +255,24 @@ textarea {
   .swiper.swiper {
     padding-bottom: 80px;
   }
-  .swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets {
-    bottom: 15px;
-    display: flex;
-    justify-content: flex-start;
-    left: 100px;
-    width: 100%;
-  }
+   
+}
+
+.userFeedbackSwiper.swiper-slide{
+  max-width: 295px;
+}
+
+.userFeedbackSwiper
+  > .swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets {
+  bottom: 35px;
+  left: -98px;
+  width: 80%;
 }
 
 .userFeedbackSwiper
   > .swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  right: 40px;
-  top: 232px;
+  right: 88px;;
+  top: 202px;
   left: auto;
   color: grey;
 }
@@ -275,7 +280,7 @@ textarea {
 .userFeedbackSwiper
   > .swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next {
   right: 1px;
-  top: 232px;
+  top: 202px;
   left: auto;
   color: grey;
 }

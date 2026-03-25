@@ -8,12 +8,12 @@
 .info {
   font-weight: 400;
   font-size: 18px;
+  padding-bottom: 80px;
 }
 
 .name {
   font-weight: 700;
-  font-size: 18px;
-  padding-top: 16px;
+  font-size: 18px;  
 }
 
 .feedback{
