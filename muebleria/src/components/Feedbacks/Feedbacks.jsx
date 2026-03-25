@@ -12,7 +12,7 @@ const Feedbacks = () => {
 
   useEffect(() => {
     fetch(
-      "https://furniture-store-v2.b.goit.study/api/feedbacks?limit=10&page=1",
+      "https://furniture-store-v2.b.goit.study/api/feedbacks?limit=10&page=1"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,9 @@ const Feedbacks = () => {
     <div className="container">
       <div className={s.feedbacks}>
         <p className={s.title}>Відгуки клієнтів</p>
-        <p className={s.info}>Дізнайтеся, що кажуть наші задоволені клієнти про нашу меблі.</p>
+        <p className={s.info}>
+          Дізнайтеся, що кажуть наші задоволені клієнти про нашу меблі.
+        </p>
         <Swiper
           spaceBetween={50}
           slidesPerView={3}
@@ -35,7 +37,7 @@ const Feedbacks = () => {
         >
           {feedbacks.length > 0 &&
             feedbacks.map((fb) => (
-              <SwiperSlide>
+              <SwiperSlide className="userFeedback">
                 <li key={fb.id}>
                   <div className={s.feedback}>
                     <p>{fb.rate}</p>

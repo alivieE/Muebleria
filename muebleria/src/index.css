@@ -207,7 +207,10 @@ textarea {
 }
 
 .swiper-slide {
-  min-width: 280px;
+  max-width: 280px;
+}
+.userFeedback.swiper-slide {
+  max-width: 296px;
 }
 .swiper-wrapper {
   gap: 16px;
