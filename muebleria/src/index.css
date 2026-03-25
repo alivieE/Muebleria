@@ -198,6 +198,12 @@ textarea {
   .container {
     width: 704px;
   }
+  .swiper-slide {
+  max-width: 280px;
+}
+.userFeedback.swiper-slide {
+  max-width: 296px;
+}
 }
 
 @media screen and (min-width: 1440px) {
