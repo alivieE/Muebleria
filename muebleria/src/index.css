@@ -248,21 +248,7 @@ textarea {
 }
 
 .userFeedbackSwiper.swiper.swiper {
-  padding-bottom: 200px;
-}
-
-.userFeedbackSwiper.swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next {
-  right: 20px;
-  top: 372px;
-  left: auto;
-  color: grey;
-}
-
-.userFeedbackSwiper.swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  right: 88px;
-  top: 372px;
-  left: auto;
-  color: grey;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -276,4 +262,20 @@ textarea {
     left: 100px;
     width: 100%;
   }
+}
+
+.userFeedbackSwiper
+  > .swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
+  right: 40px;
+  top: 232px;
+  left: auto;
+  color: grey;
+}
+
+.userFeedbackSwiper
+  > .swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next {
+  right: 1px;
+  top: 232px;
+  left: auto;
+  color: grey;
 }
