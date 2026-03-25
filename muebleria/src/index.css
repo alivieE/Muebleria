@@ -255,10 +255,9 @@ textarea {
   .swiper.swiper {
     padding-bottom: 80px;
   }
-   
 }
 
-.userFeedbackSwiper.swiper-slide{
+.userFeedbackSwiper.swiper-slide {
   max-width: 295px;
 }
 
@@ -271,8 +270,8 @@ textarea {
 
 .userFeedbackSwiper
   > .swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  right: 88px;;
-  top: 202px;
+  right: 88px;
+  top: 162px;
   left: auto;
   color: grey;
 }
@@ -280,7 +279,7 @@ textarea {
 .userFeedbackSwiper
   > .swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next {
   right: 1px;
-  top: 202px;
+  top: 162px;
   left: auto;
   color: grey;
 }

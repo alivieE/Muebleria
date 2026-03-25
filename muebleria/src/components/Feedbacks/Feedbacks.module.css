@@ -13,12 +13,14 @@
 
 .name {
   font-weight: 700;
-  font-size: 18px;  
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-.feedback{
+/* .feedback{
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 150px;
-}
+} */
