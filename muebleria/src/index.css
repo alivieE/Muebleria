@@ -177,13 +177,13 @@ textarea {
   position: relative;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet {
-  background: white;
+  background: grey;
 }
 .swiper-pagination-bullet-active.swiper-pagination-bullet-active {
-  background: rgba(118, 65, 145, 1);
+  background: black;
 }
 .swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets.swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .container {
