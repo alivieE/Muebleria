@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs/AboutUs.jsx";
 import Questions from "./components/Questions/Questions.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import PopularItems from "./components/PopularItems/PopularItems.jsx";
+import Feedbacks from "./components/Feedbacks/Feedbacks.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutUs></AboutUs>
       <PopularItems></PopularItems>
       <Questions></Questions>
+      <Feedbacks></Feedbacks>
       <Footer></Footer>
     </div>
   );

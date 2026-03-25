@@ -217,12 +217,14 @@ textarea {
   right: 20px;
   top: 372px;
   left: auto;
+  color: grey;
 }
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
   right: 88px;
   top: 372px;
   left: auto;
+  color: grey;
 }
 .swiper.swiper {
   padding-bottom: 50px;
