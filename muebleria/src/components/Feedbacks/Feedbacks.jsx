@@ -28,7 +28,7 @@ const Feedbacks = () => {
         <p className={s.info}>
           Дізнайтеся, що кажуть наші задоволені клієнти про нашу меблі.
         </p>
-        <Swiper
+        <Swiper className="userFeedbackSwiper"
           spaceBetween={50}
           slidesPerView={3}
           modules={[Navigation, Pagination]}

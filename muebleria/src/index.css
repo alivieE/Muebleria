@@ -194,6 +194,10 @@ textarea {
   padding: 0 24px;
 }
 
+/* .userFeedback.swiper.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden{
+  padding-bottom: 50px;
+} */
+
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
@@ -210,14 +214,18 @@ textarea {
   .container {
     width: 1312px;
   }
+  .swiper-slide {
+    max-width: 280px;
+  }
+  .userFeedback.swiper-slide {
+    max-width: 296px;
+  }
 }
 
 .swiper-slide {
-  max-width: 280px;
+  min-width: 280px;
 }
-.userFeedback.swiper-slide {
-  max-width: 296px;
-}
+
 .swiper-wrapper {
   gap: 16px;
 }
@@ -237,6 +245,24 @@ textarea {
 }
 .swiper.swiper {
   padding-bottom: 50px;
+}
+
+.userFeedbackSwiper.swiper.swiper {
+  padding-bottom: 200px;
+}
+
+.userFeedbackSwiper.swiper-button-next.swiper-button-next.swiper-button-next.swiper-button-next {
+  right: 20px;
+  top: 372px;
+  left: auto;
+  color: grey;
+}
+
+.userFeedbackSwiper.swiper-button-prev.swiper-button-prev.swiper-button-prev.swiper-button-prev {
+  right: 88px;
+  top: 372px;
+  left: auto;
+  color: grey;
 }
 
 @media screen and (min-width: 1440px) {
