@@ -111,3 +111,30 @@
   margin-top: 32px;
   margin-bottom: 8px;
 }
+
+@media (min-width: 768px) {
+  .categoryItem{
+    position: relative;
+    width: calc(25% - 8px);
+}
+.furnitureItem{
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 48%;
+}
+}
+
+
+/* @media (min-width: 1440px) {
+  .categoryItem{
+    position: relative;
+    width: 199px;
+}
+.furnitureItem{
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(25% - 12px);
+}
+} */
