@@ -1,6 +1,6 @@
 .hero {
   height: 600px;
-  background-image: url("../../assets/heroBG.svg");
+  background-image: url("../../assets/heroBGMob.svg");
   background-position: center;
   background-size: cover; /* Adjust as needed: 'contain', '100% 100%', etc. */
   background-repeat: no-repeat;
@@ -34,4 +34,43 @@
   border-radius: 25px;
   border-top: 2px solid #954d4f;
   border-bottom: 2px solid #570608;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../../assets/heroBGTab.svg");
+    height: 396px;
+  }
+  .heroDescription {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 24px;
+  padding: 80px 0;
+  width: 580px;
+}
+  .heroTitle {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+  }
+  .heroSubtitle {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .heroButton {
+  background-color: rgb(107, 6, 9);
+  color: white;
+  width: 210px;
+  padding: 10px;
+  border-radius: 25px;
+  border-top: 2px solid #954d4f;
+  border-bottom: 2px solid #570608;
+}
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    background-image: url("../../assets/heroBGDesk.svg");
+  }
 }

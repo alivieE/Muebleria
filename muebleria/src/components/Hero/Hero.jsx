@@ -3,6 +3,7 @@ import s from "./Hero.module.css";
 import images from "../../assets/index.js";
 
 const Hero = () => {
+  
   return (
     <div className={s.hero}>
       <div className="container">
