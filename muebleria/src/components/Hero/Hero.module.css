@@ -42,13 +42,13 @@
     height: 396px;
   }
   .heroDescription {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 24px;
-  padding: 80px 0;
-  width: 580px;
-}
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+    padding: 80px 0;
+    width: 580px;
+  }
   .heroTitle {
     font-weight: 700;
     font-style: Bold;
@@ -59,18 +59,39 @@
     font-size: 18px;
   }
   .heroButton {
-  background-color: rgb(107, 6, 9);
-  color: white;
-  width: 210px;
-  padding: 10px;
-  border-radius: 25px;
-  border-top: 2px solid #954d4f;
-  border-bottom: 2px solid #570608;
-}
+    background-color: rgb(107, 6, 9);
+    color: white;
+    width: 210px;
+    padding: 10px;
+    border-radius: 25px;
+    border-top: 2px solid #954d4f;
+    border-bottom: 2px solid #570608;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
   .hero {
     background-image: url("../../assets/heroBGDesk.svg");
+    height: 507px;
+  }
+  .heroDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+    padding: 92px 0;
+    width: 100%;
+  }
+  .heroDesktop {
+    width: 560px;
+  }
+  .heroSubtitle {
+    margin: 24px 0 32px 0;
+  }
+  .heroTitle {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 56px;
   }
 }
