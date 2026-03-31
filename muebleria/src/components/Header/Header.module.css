@@ -138,6 +138,7 @@
   }
   .desktopMenu {
     display: flex;
+    align-items: center;
     padding: 0;
   }
   .menuItems {
@@ -149,13 +150,15 @@
   }
   .btnShopping {
     display: block;
-  background-color: rgb(107, 6, 9);
-  color: white;
-  /* width: calc(100% - 24px); */
-  padding: 10px;
-  margin: 0 12px;
-  border-radius: 25px;
-  border-top: 2px solid #954d4f;
-  border-bottom: 2px solid #570608;
-}
+    background-color: rgb(107, 6, 9);
+    color: white;
+    /* width: calc(100% - 24px); */
+    padding: 10px;
+    height: 42px;
+    width: 130px;
+
+    border-radius: 25px;
+    border-top: 2px solid #954d4f;
+    border-bottom: 2px solid #570608;
+  }
 }
