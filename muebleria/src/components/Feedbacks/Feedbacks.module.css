@@ -24,3 +24,101 @@
     gap: 8px;
     width: 150px;
 } */
+.feedbacks {
+  padding: 60px 0;
+}
+
+
+/* ── Слайдер ── */
+.sliderOuter {
+  position: relative;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 24px;            /* має відповідати gap у JS */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 calc((100% - 48px) / 3); /* (gap * (PER_VIEW-1)) / PER_VIEW */
+}
+
+.feedback {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+
+.descr {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Навігація ── */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+.navBtn:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.navBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.prev { left: -22px; }
+.next { right: -22px; }
+
+/* ── Пагінація ── */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #d3d3d3;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, width 0.2s;
+}
+
+.dot.active {
+  background: #111;
+  width: 24px;
+  border-radius: 4px;
+}
