@@ -47,7 +47,7 @@ const Header = () => {
                   </a>
                 </li>
               </ul>
-              <button>
+              <button className={s.btnShopping}>
                 <a href="#" className={s.links}>
                   До покупок
                 </a>
@@ -61,7 +61,7 @@ const Header = () => {
           className={isOpenMenu ? `${s.burgerMenu} ${s.open}` : s.burgerMenu}
         >
           <div className={s.wrapBurger}>
-            <div className={s.logo}>
+            <div className={s.logoOpenMenu}>
               <img src={images.logo} alt="logo" />
             </div>
             <button

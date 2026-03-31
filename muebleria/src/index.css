@@ -201,6 +201,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+    position: relative;
   }
   .swiper-slide {
     max-width: 280px;

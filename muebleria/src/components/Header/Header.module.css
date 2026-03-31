@@ -33,12 +33,6 @@
   color: #333;
 }
 
-.desktopMenu {
-  display: none;
-  list-style: none;
-  padding: 0;
-}
-
 .menuAndClose {
   background: transparent;
   border: none;
@@ -106,4 +100,62 @@
   border-radius: 25px;
   border-top: 2px solid #954d4f;
   border-bottom: 2px solid #570608;
+}
+
+@media (min-width: 768px) {
+  .logoOpenMenu {
+    display: none;
+  }
+  .burgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 470px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    padding-top: 70px;
+    /* Анімація */
+    animation: slideIn 0.4s ease forwards;
+  }
+  .menuAndClose {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 28px;
+    right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .burgerMenu {
+    display: none;
+  }
+  .menuAndClose {
+    display: none;
+  }
+  .desktopMenu {
+    display: flex;
+    padding: 0;
+  }
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin: 32px 0;
+  }
+  .btnShopping {
+    display: block;
+  background-color: rgb(107, 6, 9);
+  color: white;
+  /* width: calc(100% - 24px); */
+  padding: 10px;
+  margin: 0 12px;
+  border-radius: 25px;
+  border-top: 2px solid #954d4f;
+  border-bottom: 2px solid #570608;
+}
 }
