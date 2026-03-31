@@ -96,7 +96,7 @@
 }
 
 .prev { left: -22px; }
-.next { right: -22px; }
+.next { right: -16px; }
 
 /* ── Пагінація ── */
 .pagination {
