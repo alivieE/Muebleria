@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Muebleria/static/css/main.75f85137.css",
+    "main.js": "/Muebleria/static/js/main.ff3f9675.js",
+    "static/js/453.e3c51477.chunk.js": "/Muebleria/static/js/453.e3c51477.chunk.js",
+    "static/media/heroBGDesk.svg": "/Muebleria/static/media/heroBGDesk.4ca46c48842747fc3f9a6b4cbc18213c.svg",
+    "static/media/heroBGTab.svg": "/Muebleria/static/media/heroBGTab.a6bcfd3add1fc4d337f3cfd3b46f8bf2.svg",
+    "static/media/heroBGMob.svg": "/Muebleria/static/media/heroBGMob.7a7d9efc8cc8cf9b14f1ea802cba55cc.svg",
+    "static/media/garden.png": "/Muebleria/static/media/garden.33d654fc76ed00f118f1.png",
+    "static/media/tables.png": "/Muebleria/static/media/tables.f156ef125a9022e79d5d.png",
+    "static/media/sofas.png": "/Muebleria/static/media/sofas.0a41ae78af3f97216fb2.png",
+    "static/media/bathroom.png": "/Muebleria/static/media/bathroom.4e217b469d02d545aa42.png",
+    "static/media/hallway.png": "/Muebleria/static/media/hallway.216ed81b59df34da6175.png",
+    "static/media/beds.png": "/Muebleria/static/media/beds.646a1c3bc65f84a63ba4.png",
+    "static/media/decor.png": "/Muebleria/static/media/decor.620f5660f4dae0d4cb62.png",
+    "static/media/kids.png": "/Muebleria/static/media/kids.db0aa0f0d8acfc8a1fea.png",
+    "static/media/ALLcat.png": "/Muebleria/static/media/ALLcat.5c209a6794cebcf93068.png",
+    "static/media/chairs.png": "/Muebleria/static/media/chairs.e56c0cdde085950053e4.png",
+    "static/media/office.png": "/Muebleria/static/media/office.feb569e3803966ab72b4.png",
+    "static/media/kitchen.png": "/Muebleria/static/media/kitchen.ffd8c5ff7af032a99ce7.png",
+    "static/media/wardrobes.png": "/Muebleria/static/media/wardrobes.5bc4149957ad36af82e4.png",
+    "static/media/aboutUs.png": "/Muebleria/static/media/aboutUs.4b79f50429776e747fac.png",
+    "static/media/logo.svg": "/Muebleria/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/footerLogo.svg": "/Muebleria/static/media/footerLogo.06870e9d0239184a30d218c20a25954a.svg",
+    "static/media/instagram.svg": "/Muebleria/static/media/instagram.1a8ad7729eb0e176eebda926e33d7e5e.svg",
+    "static/media/youtube.svg": "/Muebleria/static/media/youtube.5fd17deb2674161161cac814ed0476bf.svg",
+    "index.html": "/Muebleria/index.html",
+    "static/media/questionClosed.svg": "/Muebleria/static/media/questionClosed.7d255aca0f7517656dfda45fabdb5a1b.svg",
+    "static/media/questionOpened.svg": "/Muebleria/static/media/questionOpened.90904d7f4739d7730b7a3987d2fdbe97.svg",
+    "static/media/facebook.svg": "/Muebleria/static/media/facebook.dc9a4d10d3e806d38e924db4cb341023.svg",
+    "static/media/close.svg": "/Muebleria/static/media/close.dc69c71382b6659b7698803fd2d444cb.svg",
+    "static/media/menu.svg": "/Muebleria/static/media/menu.69f637837339c4764c72e4757da8fb38.svg",
+    "main.75f85137.css.map": "/Muebleria/static/css/main.75f85137.css.map",
+    "main.ff3f9675.js.map": "/Muebleria/static/js/main.ff3f9675.js.map",
+    "453.e3c51477.chunk.js.map": "/Muebleria/static/js/453.e3c51477.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75f85137.css",
+    "static/js/main.ff3f9675.js"
+  ]
+}
