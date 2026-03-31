@@ -4,13 +4,13 @@
   align-items: center;
   gap: 24px;
   padding: 64px 20px;
-  background-color: #F0E6E6;
+  background-color: #f0e6e6;
 }
 
-.descWrap{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.descWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .title {
@@ -36,3 +36,23 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (min-width: 768px) {
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+/* @media (min-width: 1440px) {
+  .categoryItem{
+    position: relative;
+    width: 199px;
+}
+.furnitureItem{
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(25% - 12px);
+}
+} */
