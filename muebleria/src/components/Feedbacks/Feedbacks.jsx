@@ -2,42 +2,57 @@ import React, { useEffect, useState, useRef, useCallback } from "react";
 import ReactStars from "react-stars";
 import s from "./Feedbacks.module.css";
 
-const PER_VIEW = 3;
 const GAP = 24;
+
+const getPerView = () => {
+  if (window.innerWidth >= 1440) return 3;
+  if (window.innerWidth >= 768) return 2;
+  return 1;
+};
 
 const Feedbacks = () => {
   const [feedbacks, setFeedbacks] = useState([]);
   const [current, setCurrent] = useState(0);
+  const [perView, setPerView] = useState(getPerView);
   const trackRef = useRef(null);
 
   useEffect(() => {
-    fetch(
-      "https://furniture-store-v2.b.goit.study/api/feedbacks?limit=10&page=1",
-    )
+    fetch("https://furniture-store-v2.b.goit.study/api/feedbacks?limit=10&page=1")
       .then((res) => res.json())
       .then((data) => setFeedbacks(data.feedbacks));
   }, []);
 
-  // Зсув на один слайд за раз
+  useEffect(() => {
+    const handleResize = () => {
+      const newPerView = getPerView();
+      setPerView(newPerView);
+      setCurrent(0);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     if (!trackRef.current) return;
+    const viewportWidth = trackRef.current.parentElement.offsetWidth;
     const slideWidth =
-      (trackRef.current.parentElement.offsetWidth - GAP * (PER_VIEW - 1)) /
-      PER_VIEW;
+      perView === 1
+        ? 335
+        : (viewportWidth - GAP * (perView - 1)) / perView;
     const offset = current * (slideWidth + GAP);
     trackRef.current.style.transform = `translateX(-${offset}px)`;
-  }, [current, feedbacks]);
+  }, [current, feedbacks, perView]);
 
-  const maxIndex = Math.max(feedbacks.length - PER_VIEW, 0);
+  const maxIndex = Math.max(feedbacks.length - perView, 0);
 
   const prev = useCallback(() => setCurrent((c) => Math.max(c - 1, 0)), []);
   const next = useCallback(
     () => setCurrent((c) => Math.min(c + 1, maxIndex)),
-    [maxIndex],
+    [maxIndex]
   );
 
   return (
-    <div className="container">
+    <div className="container" id="feedbacks">
       <div className={s.feedbacks}>
         <p className={s.title}>Відгуки клієнтів</p>
         <p className={s.info}>
@@ -85,9 +100,8 @@ const Feedbacks = () => {
           </button>
         </div>
 
-        {/* Одна крапка = один відгук, але без останніх PER_VIEW-1 */}
         <div className={s.pagination}>
-          {feedbacks.slice(0, feedbacks.length - PER_VIEW + 1).map((_, i) => (
+          {feedbacks.slice(0, feedbacks.length - perView + 1).map((_, i) => (
             <button
               key={i}
               className={`${s.dot} ${i === current ? s.active : ""}`}

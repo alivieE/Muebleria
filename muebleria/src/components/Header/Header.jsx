@@ -5,12 +5,15 @@ import images from "../../assets/index.js";
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
-    <header className={isOpenMenu ? `${s.header} ${s.overflow}` : s.header}>
+    <header
+      className={isOpenMenu ? `${s.header} ${s.overflow}` : s.header}
+      id="header"
+    >
       <div className="container">
         <div className={s.wrap}>
-          <div className={s.logo}>
+          <a href="#header">
             <img src={images.logo} alt="logo" />
-          </div>
+          </a>
           <nav class="nav">
             <button
               className={s.menuAndClose}
@@ -24,31 +27,37 @@ const Header = () => {
             <div className={s.desktopMenu}>
               <ul className={s.menuItems}>
                 <li>
-                  <a href="#" className={s.links}>
+                  <a href="#furniture" className={s.links}>
                     Наші меблі
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>
+                  <a href="#aboutUs" className={s.links}>
                     Про нас
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>
+                  <a href="#popular" className={s.links}>
+                    Популярне
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#questions" className={s.links}>
                     Часті запитання
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className={s.links}>
+                  <a href="#feedbacks" className={s.links}>
                     Відгуки
                   </a>
                 </li>
               </ul>
               <button className={s.btnShopping}>
-                <a href="#" className={s.links}>
+                <a href="#furniture" className={s.links}>
                   До покупок
                 </a>
               </button>
@@ -77,7 +86,7 @@ const Header = () => {
           <ul className={s.menuItems}>
             <li>
               <a
-                href="#"
+                href="#furniture"
                 className={s.links}
                 onClick={() => {
                   setIsOpenMenu(false);
@@ -89,7 +98,7 @@ const Header = () => {
 
             <li>
               <a
-                href="#"
+                href="#aboutUs"
                 className={s.links}
                 onClick={() => {
                   setIsOpenMenu(false);
@@ -100,7 +109,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#popular"
                 className={s.links}
                 onClick={() => {
                   setIsOpenMenu(false);
@@ -111,7 +120,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#questions"
                 className={s.links}
                 onClick={() => {
                   setIsOpenMenu(false);
@@ -123,7 +132,7 @@ const Header = () => {
 
             <li>
               <a
-                href="#"
+                href="#feedbacks"
                 className={s.links}
                 onClick={() => {
                   setIsOpenMenu(false);
@@ -139,7 +148,7 @@ const Header = () => {
               setIsOpenMenu(false);
             }}
           >
-            <a href="#" className={s.links}>
+            <a href="#furniture" className={s.links}>
               До покупок
             </a>
           </button>

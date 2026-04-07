@@ -18,16 +18,9 @@
   margin-bottom: 8px;
 }
 
-/* .feedback{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 150px;
-} */
 .feedbacks {
   padding: 60px 0;
 }
-
 
 /* ── Слайдер ── */
 .sliderOuter {
@@ -40,7 +33,7 @@
 
 .track {
   display: flex;
-  gap: 24px;            /* має відповідати gap у JS */
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -48,8 +41,23 @@
   will-change: transform;
 }
 
+/* Mobile: 1 відгук, фіксована ширина 335px */
 .slide {
-  flex: 0 0 calc((100% - 48px) / 3); /* (gap * (PER_VIEW-1)) / PER_VIEW */
+  flex: 0 0 335px;
+}
+
+/* Tablet: 2 відгуки */
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+}
+
+/* Desktop: 3 відгуки */
+@media (min-width: 1440px) {
+  .slide {
+    flex: 0 0 calc((100% - 48px) / 3);
+  }
 }
 
 .feedback {
@@ -58,7 +66,6 @@
   padding: 24px;
   height: 100%;
 }
-
 
 .descr {
   font-size: 14px;
@@ -121,62 +128,4 @@
   background: #111;
   width: 24px;
   border-radius: 4px;
-}
-
-/* Feedbacks.module.css */
-
-.controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 32px;
-}
-
-.pagination {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: #d3d3d3;
-  cursor: pointer;
-  padding: 0;
-  transition: background 0.2s;
-}
-
-.dot.active {
-  background: #111;
-}
-
-.navigation {
-  display: flex;
-  gap: 12px;
-}
-
-.navBtn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid #e5e5e5;
-  background: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
-}
-
-.navBtn:hover:not(:disabled) {
-  background: #f5f5f5;
-}
-
-.navBtn:disabled {
-  opacity: 0.3;
-  cursor: default;
 }

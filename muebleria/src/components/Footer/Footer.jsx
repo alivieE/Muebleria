@@ -7,20 +7,25 @@ const Footer = () => {
     <div>
       <div className={s.section}>
         <div className={s.logo}>
-          <img src={images.footerLogo} alt="logo" />
+          <a href="#header">
+            <img src={images.footerLogo} alt="logo" />
+          </a>
         </div>
         <div></div>
         <div className={s.linksContainer}>
-          <a href="#" className={s.links}>
+          <a href="#furniture" className={s.links}>
             Наші меблі
           </a>
-          <a href="#" className={s.links}>
+          <a href="#aboutUs" className={s.links}>
             Про нас
           </a>
-          <a href="#" className={s.links}>
+          <a href="#popular" className={s.links}>
+            Популярне
+          </a>
+          <a href="#questions" className={s.links}>
             Часті запитання
           </a>
-          <a href="#" className={s.links}>
+          <a href="#feedbacks" className={s.links}>
             Відгуки
           </a>
         </div>

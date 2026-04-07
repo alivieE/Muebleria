@@ -59,7 +59,7 @@ const FurnitureList = () => {
   console.log(furnitures);
 
   return (
-    <div className="container">
+    <div className="container" id="furniture">
       <div>
         <div className={s.description}>
           <p className={s.title}>Наші меблі</p>

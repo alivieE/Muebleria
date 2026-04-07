@@ -43,7 +43,7 @@ const Questions = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="questions">
       <div className={s.questions}>
         <p className={s.title}>Часті питання</p>
         <ul className={s.list}>

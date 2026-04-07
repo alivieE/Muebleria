@@ -113,31 +113,38 @@
 }
 
 @media (min-width: 768px) {
-  .categoryItem{
+  .categoryItem {
     position: relative;
     width: calc(25% - 12px);
-}
-.furnitureItem{
-  display: flex;
+  }
+  .furnitureItem {
+    display: flex;
     flex-direction: column;
     gap: 24px;
     width: 48%;
+  }
 }
-}
-
 
 @media (min-width: 1440px) {
-  .categoryItem{
+  .categoryItem {
     position: relative;
     width: 199px;
-}
-.categoryItem:nth-child(n+7){
-  width: 167px;
-}
-.furnitureItem{
-  display: flex;
+  }
+  .categoryItem:nth-child(n + 7) {
+    width: 167px;
+  }
+
+  .furnitureItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: flex-start;
+  }
+
+  .furnitureItem {
+    display: flex;
     flex-direction: column;
     gap: 24px;
-    width: calc(25% - 22px);
-}
+    width: calc(25% - 20px);
+  }
 }

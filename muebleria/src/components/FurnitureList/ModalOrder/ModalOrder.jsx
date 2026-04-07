@@ -29,7 +29,7 @@ const ModalOrder = ({ onClose, selectedColor, furniture, setModalOrder }) => {
           }
         }}
       >
-        <div className={s.section}>
+        <div className={s.section} id="order">
           <p className={s.orderTitle}>Замовити</p>
           <form>
             <div className={s.inputBlock}>

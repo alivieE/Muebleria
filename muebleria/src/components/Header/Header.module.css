@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.desktopMenu {
+  display: none;
+}
+
 .hamburger-menu {
   display: flex;
   align-items: center;
@@ -104,6 +108,9 @@
 
 @media (min-width: 768px) {
   .logoOpenMenu {
+    display: none;
+  }
+  .desktopMenu {
     display: none;
   }
   .burgerMenu {
