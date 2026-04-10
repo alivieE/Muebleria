@@ -110,6 +110,12 @@
   border-bottom: 2px solid #570608;
   margin-top: 32px;
   margin-bottom: 8px;
+  transition: 1s;
+}
+
+.showMoreBtn:hover {
+  padding: 12px;
+  background-color: rgb(145, 21, 25);
 }
 
 @media (min-width: 768px) {
@@ -117,11 +123,18 @@
     position: relative;
     width: calc(25% - 12px);
   }
+
+  .furnitureItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   .furnitureItem {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 48%;
+    width: calc(50% - 12px);
   }
 }
 

@@ -36,6 +36,10 @@
   border-top: 2px solid #954d4f;
   border-bottom: 2px solid #570608;
 }
+.heroButton:hover {
+    width: 110%;
+    background-color: rgb(145, 21, 25);
+  }
 
 @media (min-width: 768px) {
   .hero {
@@ -68,6 +72,11 @@
     border-top: 2px solid #954d4f;
     border-bottom: 2px solid #570608;
     font-size: 16px;
+    transition: 1s;
+  }
+  .heroButton:hover {
+    width: 215px;
+    background-color: rgb(145, 21, 25);
   }
 }
 

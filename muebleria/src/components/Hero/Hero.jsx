@@ -14,9 +14,12 @@ const Hero = () => {
               перетворять ваш простір. Наша продукція поєднує в собі
               елегантність та функціональність.
             </p>
-            <button href="#" className={s.heroButton}>
+            <a href="#feedbacks">
+              <button  className={s.heroButton}>
               Що про нас думають
             </button>
+            </a>
+            
           </div>
         </div>
       </div>

@@ -48,10 +48,10 @@ const Questions = () => {
         <p className={s.title}>Часті питання</p>
         <ul className={s.list}>
           {faqData.map((item) => (
-            <li key={item.id} className={s.item}>
+            <li key={item.id} className={s.item} onClick={() => toggle(item.id)}>
               <div className={s.questionWrap}>
                 <span className={s.question}>{item.question}</span>
-                <span className={s.icon} onClick={() => toggle(item.id)}>
+                <span className={s.icon} >
                   <img
                     className={`${s.iconImg} ${openId === item.id ? s.iconRotated : ""}`}
                     src={images.questionClosed}

@@ -142,7 +142,7 @@ table {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: inherit;
 }
 img {

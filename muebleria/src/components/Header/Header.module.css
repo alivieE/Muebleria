@@ -95,6 +95,10 @@
   font-weight: 600;
 }
 
+.links:hover {
+  text-decoration: underline;
+}
+
 .btnShopping {
   background-color: rgb(107, 6, 9);
   color: white;
@@ -104,6 +108,11 @@
   border-radius: 25px;
   border-top: 2px solid #954d4f;
   border-bottom: 2px solid #570608;
+  transition: 1s;
+}
+
+.btnShopping:hover {
+  background-color: rgb(145, 21, 25);
 }
 
 @media (min-width: 768px) {

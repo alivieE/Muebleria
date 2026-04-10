@@ -9,6 +9,7 @@
 
 .socialIcons {
   display: flex;
+  align-items: center;
   gap: 26px;
   padding: 30px 0;
 }
@@ -23,6 +24,18 @@
 .links {
   font-weight: 400;
   font-size: 16px;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.socialIcon {
+  color: white;
+}
+.socialIcon:hover {
+  color: black;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -55,5 +68,17 @@
     gap: 24px;
     justify-content: center;
     align-items: center;
+  }
+  .socialIcons {
+    display: flex;
+    gap: 26px;
+    padding: 30px 0;
+    align-items: center;
+  }
+  .socialIcon {
+    color: white;
+  }
+  .socialIcon:hover {
+    color: black;
   }
 }
