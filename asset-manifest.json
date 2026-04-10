@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Muebleria/static/css/main.cc1e0bc2.css",
-    "main.js": "/Muebleria/static/js/main.bbe5b212.js",
+    "main.css": "/Muebleria/static/css/main.9870bdd0.css",
+    "main.js": "/Muebleria/static/js/main.dbedea73.js",
     "static/js/453.e3c51477.chunk.js": "/Muebleria/static/js/453.e3c51477.chunk.js",
     "static/media/heroBGDesk.svg": "/Muebleria/static/media/heroBGDesk.4ca46c48842747fc3f9a6b4cbc18213c.svg",
     "static/media/heroBGTab.svg": "/Muebleria/static/media/heroBGTab.a6bcfd3add1fc4d337f3cfd3b46f8bf2.svg",
@@ -30,12 +30,12 @@
     "static/media/facebook.svg": "/Muebleria/static/media/facebook.dc9a4d10d3e806d38e924db4cb341023.svg",
     "static/media/close.svg": "/Muebleria/static/media/close.dc69c71382b6659b7698803fd2d444cb.svg",
     "static/media/menu.svg": "/Muebleria/static/media/menu.69f637837339c4764c72e4757da8fb38.svg",
-    "main.cc1e0bc2.css.map": "/Muebleria/static/css/main.cc1e0bc2.css.map",
-    "main.bbe5b212.js.map": "/Muebleria/static/js/main.bbe5b212.js.map",
+    "main.9870bdd0.css.map": "/Muebleria/static/css/main.9870bdd0.css.map",
+    "main.dbedea73.js.map": "/Muebleria/static/js/main.dbedea73.js.map",
     "453.e3c51477.chunk.js.map": "/Muebleria/static/js/453.e3c51477.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc1e0bc2.css",
-    "static/js/main.bbe5b212.js"
+    "static/css/main.9870bdd0.css",
+    "static/js/main.dbedea73.js"
   ]
 }
